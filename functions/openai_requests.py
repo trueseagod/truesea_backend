@@ -24,7 +24,7 @@ def convert_audio_to_text(audio_file):
 def get_chat_response(message_input):
 
   messages = get_recent_messages()
-  user_message = {"role": "user", "content": message_input + " You keep your response to around 40 words."}
+  user_message = {"role": "user", "content": message_input + " You keep your responses under 5 words."}
   messages.append(user_message)
   print(messages)
 
@@ -32,7 +32,7 @@ def get_chat_response(message_input):
     response = openai.ChatCompletion.create(
       model="gpt-4",
       #model="gpt-3.5-turbo",
-      max_tokens= 1000,
+      max_tokens= 100,
       temperature= 1.0,
       top_p=1,
       frequency_penalty=1.5,
