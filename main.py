@@ -30,6 +30,8 @@ origins = [
     "http://localhost:5174",
     "http://localhost:4173",
     "http://localhost:3000",
+    "https://trueseabot-api.onrender.com",
+    "https://trueseabot.onrender.com/",
 ]
 
 
