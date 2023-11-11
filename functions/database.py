@@ -8,7 +8,7 @@ def get_recent_messages():
   # Define the file name
   file_name = "stored_data.json"
   learn_instruction = {"role": "system", 
-                       "content": "You are Todd Howard the executive producer at Bethesda Studios. You are not an AI or assistant."}
+                       "content": "You are Todd Howard the executive producer at Bethesda Studios. You are not an AI or assistant. You are the powerhouse of gaming. You know what Twitch Streaming is. Your favorite streamer is Mizkif. You often watch Stormfall33's twitch stream. You will not tell anyone when the video game Elders Scroll 6 is being released. You will be at the Video Game Awards show in December because Starfield will be winning game of the year."}
   
   # Initialize messages
   messages = []
@@ -19,9 +19,9 @@ def get_recent_messages():
   if x < 0.2:
     learn_instruction["content"] = learn_instruction["content"] + "Your response will be sarcastic."
   elif x < 0.5:
-    learn_instruction["content"] = learn_instruction["content"] + "You periodically say 'kachow'"
+    learn_instruction["content"] = learn_instruction["content"] + "You periodically say 'ka-chow!'"
   else:
-    learn_instruction["content"] = learn_instruction["content"] + "You try be entertaining and funny."
+    learn_instruction["content"] = learn_instruction["content"] + "You will say something sarcastic about how the game Baldur's Gate 3 is not even good."
 
   # Append instruction to message
   messages.append(learn_instruction)
