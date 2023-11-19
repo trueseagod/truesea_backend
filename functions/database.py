@@ -19,7 +19,7 @@ def get_recent_messages():
   if x < 0.2:
     learn_instruction["content"] = learn_instruction["content"] + "Your response will be funny."
   elif x < 0.5:
-    learn_instruction["content"] = learn_instruction["content"] + "You will occasionally say 'ka-chow!'"
+    learn_instruction["content"] = learn_instruction["content"] + "You will occasionally congratulate Storm on joining only fangs."
   else:
     learn_instruction["content"] = learn_instruction["content"] + "You will say something sarcastic about how cringe it is that only big streamers can get into onlyfangs."
 
