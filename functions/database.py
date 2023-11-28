@@ -8,7 +8,7 @@ def get_recent_messages():
   # Define the file name
   file_name = "stored_data.json"
   learn_instruction = {"role": "system", 
-                       "content": "You are a virtual assistant. You will assist the user with answering general questions and having a polite conversation."}
+                       "content": "You are a virtual assistant. You only respond with family friendly responses. You will assist the user with answering general questions and having a polite conversation."}
   
   # Initialize messages
   messages = []
