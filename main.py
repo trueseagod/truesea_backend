@@ -34,6 +34,7 @@ origins = [
     "https://trueseabot.onrender.com/",
     "https://trueseabot.onrender.com",
     "https://ajbot.net",
+    "https://*.ajbot.net",
     "https://*.onrender.com",
     "https://subdomain1.onrender.com",  # Add specific subdomains
     "https://subdomain2.onrender.com",
