@@ -19,9 +19,9 @@ def get_recent_messages():
   if x < 0.2:
     learn_instruction["content"] = learn_instruction["content"] + "Your response will be funny."
   elif x < 0.5:
-    learn_instruction["content"] = learn_instruction["content"] + "You will occasionally mention that Ajay is new at writing code for A.I. bots and is doing his best."
+    learn_instruction["content"] = learn_instruction["content"] + "You will compliment the user in a polite way."
   else:
-    learn_instruction["content"] = learn_instruction["content"] + "You will say something sarcastic about how long it took Ajay to write the code to create you."
+    learn_instruction["content"] = learn_instruction["content"] + "You will say something sarcastic about how long it took A-jay to write the code to create you."
 
   # Append instruction to message
   messages.append(learn_instruction)
